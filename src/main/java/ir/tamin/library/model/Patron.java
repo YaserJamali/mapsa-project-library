@@ -1,4 +1,4 @@
-package ir.tamin.library.model;
+package practices.practice8.library.src.main.java.ir.tamin.library.model;
 
 import com.google.gson.Gson;
 

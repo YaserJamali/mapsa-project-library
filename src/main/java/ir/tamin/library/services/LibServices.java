@@ -1,9 +1,8 @@
-package ir.tamin.library.services;
+package practices.practice8.library.src.main.java.ir.tamin.library.services;
 
-import ir.tamin.library.model.Book;
-import ir.tamin.library.model.Library;
-import ir.tamin.library.model.Patron;
-
+import practices.practice8.library.src.main.java.ir.tamin.library.model.Book;
+import practices.practice8.library.src.main.java.ir.tamin.library.model.Patron;
+import practices.practice8.library.src.main.java.ir.tamin.library.model.Library;
 import java.util.List;
 
 public class LibServices extends Library {
@@ -18,7 +17,7 @@ public class LibServices extends Library {
     //********************
     //Your Needs Methods *
     //********************
-    String checkOutBook(Patron patron, Book book) {
+    String checkOutBook(Patron patron,Book  book) {
         if (isAvailable(book, patron) && patronValidate(patron)) {
             patron.getBooksCheckedOut().add(book);
             book.setCheckedOut(false);

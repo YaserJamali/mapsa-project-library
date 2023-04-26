@@ -1,7 +1,8 @@
-package ir.tamin.library.services;
+package practices.practice8.library.src.main.java.ir.tamin.library.services;
 
-import ir.tamin.library.model.Book;
-import ir.tamin.library.model.Patron;
+import practices.practice8.library.src.main.java.ir.tamin.library.model.Book;
+import practices.practice8.library.src.main.java.ir.tamin.library.model.Patron;
+import practices.practice8.library.src.main.java.ir.tamin.library.services.LibServices;
 import java.util.ArrayList;
 import java.util.List;
 
