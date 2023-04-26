@@ -1,13 +1,16 @@
-package practices.practice8.library.src.main.java.ir.tamin.library.services;
+package practices.practice8.library.services;
 
-import practices.practice8.library.src.main.java.ir.tamin.library.model.Book;
-import practices.practice8.library.src.main.java.ir.tamin.library.model.Patron;
-import practices.practice8.library.src.main.java.ir.tamin.library.services.LibServices;
+import practices.practice8.library.model.Book;
+import practices.practice8.library.model.Patron;
+
 import java.util.ArrayList;
 import java.util.List;
 
-/*
-* */
+/**
+ *
+ * @author Ali Jamali
+ *
+ */
 public class Main {
     public static void main(String[] args) {
 
