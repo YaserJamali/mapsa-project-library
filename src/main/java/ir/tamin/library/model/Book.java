@@ -3,9 +3,16 @@ package ir.tamin.library.model;
 import com.google.gson.Gson;
 import ir.tamin.library.services.LibServices;
 
+/**
+ *
+ * @author Ali Jamali
+ *
+ */
 public class Book {
-//    title (a String), author (a String), publicationYear (an int),
-//    isCheckedOut (a boolean), and dueDate (a String)
+
+    //**************************
+    // *       Properties      *
+    //**************************
 
     private String title;
     private String author;
@@ -14,6 +21,9 @@ public class Book {
     private boolean isCheckedOut;
     private String dueDate;
 
+    //**************************
+    // *     Constructors      *
+    //**************************
 
     public Book(String title, String author, int publicationYear, boolean isCheckedOut, String dueDate) {
         this.title = title;
@@ -23,6 +33,9 @@ public class Book {
         this.dueDate =dueDate;
     }
 
+    //***********************************
+    // *       Getters and Setters      *
+    //***********************************
     public String getTitle() {
         return title;
     }
@@ -68,6 +81,9 @@ public class Book {
         return this;
     }
 
+    //***********************************
+    // *       toString Method          *
+    //***********************************
     @Override
     public String toString() {
         return new Gson().toJson(this);

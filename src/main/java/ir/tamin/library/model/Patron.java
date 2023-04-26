@@ -5,14 +5,17 @@ import com.google.gson.Gson;
 import java.util.List;
 
 public class Patron {
-    //    name (a String), libraryId (an int),
-//    booksCheckedOut (an array of Book objects), and finesOwed (a double).
+    //**************************
+    // *       Properties      *
+    //**************************
     private int libraryId;
     private String name;
     private List<Book> booksCheckedOut;
     private double finesOwed;
 
-
+    //**************************
+    // *     Constructors      *
+    //**************************
 
     public Patron(int libraryId, String name, List<Book> booksCheckedOut, double finesOwed) {
         this.libraryId = libraryId;
@@ -21,6 +24,9 @@ public class Patron {
         this.finesOwed = finesOwed;
     }
 
+    //***********************************
+    // *       Getters and Setters      *
+    //***********************************
     public int getLibraryId() {
         return libraryId;
     }
@@ -57,6 +63,9 @@ public class Patron {
         return this;
     }
 
+    //***********************************
+    // *       toString Method          *
+    //***********************************
     @Override
     public String toString() {
         return new Gson().toJson(this);

@@ -6,20 +6,27 @@ import java.util.List;
 
 public class Library {
 
-//    books (an array of Book objects), patrons (an array of Patron objects), and currentDate (a String).
-
+    //**************************
+    // *       Properties      *
+    //**************************
     private List<Book> books;
     private List<Patron> patrons;
     private String currentDate;
 
 
 
+    //**************************
+    // *     Constructors      *
+    //**************************
     public Library(List<Book> books, List<Patron> patrons, String currentDate) {
         this.books = books;
         this.patrons = patrons;
         this.currentDate = currentDate;
     }
 
+    //***********************************
+    // *       Getters and Setters      *
+    //***********************************
     public List<Book> getBooks() {
         return books;
     }
@@ -47,6 +54,9 @@ public class Library {
         return this;
     }
 
+    //***********************************
+    // *       toString Method          *
+    //***********************************
     @Override
     public String toString() {
         return new Gson().toJson(this);

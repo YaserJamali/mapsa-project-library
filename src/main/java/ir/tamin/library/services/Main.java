@@ -5,6 +5,8 @@ import ir.tamin.library.model.Patron;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+* */
 public class Main {
     public static void main(String[] args) {
 
@@ -82,10 +84,10 @@ public class Main {
         System.out.println("*********************************************************************************");
         System.out.println(lib.checkOutBook(reza,book6));
         System.out.println("*********************************************************************************");
-        System.out.println("these are Books Of Library After Everythings");
+        System.out.println("these are Books Of Library After Everything");
         System.out.println(lib.list(lib.getBooks()));
         System.out.println("*********************************************************************************");
-        System.out.println("these are Patrons Of Library After Everythings"  );
+        System.out.println("these are Patrons Of Library After Everything"  );
         System.out.println(lib.list(lib.getPatrons()));
 
 
